@@ -213,9 +213,7 @@ class EPD_2in9_B:
         self.send_command(0x26)
         for j in highRange:
             for i in wideRange:
-                continue
                 self.send_data(self.applyFlipToByte(~self.buffer_red[i + j * wide]))
-
         self.TurnOnDisplay()
 
     
