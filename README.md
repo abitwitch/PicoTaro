@@ -1,12 +1,12 @@
 # PicoTaro
 
 ## Images
-The images were sourced from [openclipart.org] (https://openclipart.org/artist/klaatu-tarot). The original illustrations are by Pamela Colman Smith, 1910 from the Rider–Waite–Smith Tarot deck. 
+The images were sourced from [openclipart.org](https://openclipart.org/artist/klaatu-tarot). The original illustrations are by Pamela Colman Smith, 1910 from the Rider–Waite–Smith Tarot deck. 
 
 ## Hardware
 This project uses: 
- - [Raspberry Pi Pico] (https://www.raspberrypi.com/products/raspberry-pi-pico/)
- - [Waveshare 2.66inch E-Paper E-Ink Display (B)] (https://www.waveshare.com/pico-epaper-2.66-b.htm)
+ - [Raspberry Pi Pico](https://www.raspberrypi.com/products/raspberry-pi-pico/)
+ - [Waveshare 2.66inch E-Paper E-Ink Display (B)](https://www.waveshare.com/pico-epaper-2.66-b.htm)
 
 ## Setup
 1) Download and install Thonny `sudo apt install thonny`
