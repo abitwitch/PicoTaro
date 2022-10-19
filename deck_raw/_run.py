@@ -80,9 +80,8 @@ names={
 "W14": "King of Wands",
 }
 
-print(names.keys())
 
-targetfile="___.py"
+targetfile="_W.py"
 
 with open(targetfile,"r") as f:
   content=f.read()
