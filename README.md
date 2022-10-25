@@ -23,4 +23,5 @@ This project uses:
  - Shuffling screen has suffle icon
  - Shuffling screen in inverted black ink
  - Shuffling screen has helper text about env random
+ - Add moon phases
  
