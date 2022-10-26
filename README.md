@@ -24,4 +24,5 @@ This project uses:
  - Shuffling screen in inverted black ink
  - Shuffling screen has helper text about env random
  - Add moon phases
- 
+ - Add capacity to invert black and white (dark mode or reverse)
+ - Use `import _thread' to shuffle while shuffle screen is loading
