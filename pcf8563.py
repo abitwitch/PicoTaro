@@ -183,8 +183,7 @@ class PCF8563:
             self.__write_byte(PCF8563_WEEKDAY_REG, self.__dec2bcd(day))
 
     def set_datetime(self, dt):
-        """Input a tuple such as (year, month, date, day, hours, minutes,
-        seconds).
+        """Input a tuple such as (year, month, date, hours, minutes, seconds, day)
         """
         self.write_all(dt[5], dt[4], dt[3],
                        dt[6], dt[2], dt[1], dt[0] % 100)
@@ -282,6 +281,14 @@ class PCF8563:
                 raise ValueError('weekday is out of range [0,6].')
             self.__write_byte(PCF8563_ALARM_WEEKDAY, self.__dec2bcd(
                 weekday) & 0x7f)
+            
+    def get_daily_alarm(self):
+        """Get alarm minute, hours, day, week
+        """
+        return (self.__read_byte(PCF8563_ALARM_HOURS),
+                self.__read_byte(PCF8563_ALARM_MINUTES),
+                self.__read_byte(PCF8563_ALARM_DAY),
+                self.__read_byte(PCF8563_ALARM_WEEKDAY))
 
 
 
