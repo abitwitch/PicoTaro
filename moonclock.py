@@ -1,11 +1,11 @@
 import pcf8563
-from machine import Pin
+import machine
 import time
 from fullmoons import fullmoons
 
 class clock:
     def __init__(self, sda=4, scl=5):
-        self.i2c=machine.I2C(0, sda=Pin(sda), scl=Pin(scl))
+        self.i2c=machine.I2C(0, sda=machine.Pin(sda), scl=machine.Pin(scl))
         self.rtc=pcf8563.PCF8563(self.i2c)
         self.fullmoons=fullmoons.fullmoons()
     
@@ -54,6 +54,8 @@ if __name__ == "__main__":
     print(f"Currrent time on Pico's clock: {str(clk.time())}")
     print(f"  (year, month, mday, hour, minute, second, weekday, yearday): {str(clk.rtc.datetime())}")
     print(f"  Moonphase (0-1): {str(clk.moon())}")
+
+
 
 
 
