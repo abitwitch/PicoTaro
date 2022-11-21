@@ -4,7 +4,7 @@ import time
 from fullmoons import fullmoons
 
 class clock:
-    def __init__(self, sda=4, scl=5):
+    def __init__(self, sda=16, scl=1):
         self.i2c=machine.I2C(0, sda=machine.Pin(sda), scl=machine.Pin(scl))
         self.rtc=pcf8563.PCF8563(self.i2c)
         self.fullmoons=fullmoons.fullmoons()
@@ -33,7 +33,7 @@ class clock:
         #this function runs at O(n) but could be re-factored to O(log(n)) if nessesary using binary search
         time=self.time()
         synodicMonth=29.530588861*60*60*24
-        nextFullMoon,prevFullMoon=self.fullmoons.getCurrentMoonRange(time)
+        prevFullMoon,nextFullMoon=self.fullmoons.getCurrentMoonRange(time)
         if prevFullMoon==None:
             cycles=int((nextFullMoon-time)/synodicMonth)
             prevFullMoon=nextFullMoon-(synodicMonth*(cycles+1))
@@ -54,8 +54,4 @@ if __name__ == "__main__":
     print(f"Currrent time on Pico's clock: {str(clk.time())}")
     print(f"  (year, month, mday, hour, minute, second, weekday, yearday): {str(clk.rtc.datetime())}")
     print(f"  Moonphase (0-1): {str(clk.moon())}")
-
-
-
-
 
