@@ -1,6 +1,7 @@
 import utime
 import epaper
 import envrandom
+import machine
 import zlib
 import moonclock
 import moongraphic
@@ -11,7 +12,14 @@ deck=['C01', 'C02', 'C03', 'C04', 'C05', 'C06', 'C07', 'C08', 'C09', 'C10', 'C11
 epd = epaper.EPD_2in9_B()
 epd.flip()
 clock=moonclock.clock()
+led = machine.Pin(25, Pin.OUT)
 
+def flash(on,off):
+    led.high()
+    utime.sleep(on)
+    led.low()
+    utime.sleep(off)
+    
 def showShuffleScreen():
     epd.imageblack.fill(0xff)
     epd.imagered.fill(0xff)
@@ -70,4 +78,7 @@ if __name__ == "__main__":
     moonphase=getMoonphase()
     loadMoonphaseMarkerToScreen(moonphase)
     epd.display()
+    flash(0.5,0.5)
+    flash(0.5,0.5)
+    flash(0.5,0.5)
 
