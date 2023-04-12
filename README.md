@@ -1,4 +1,5 @@
 # PicoTaro
+A disconnected digital taro deck. 
 
 ## Images
 The images were sourced from [openclipart.org](https://openclipart.org/artist/klaatu-tarot). The original illustrations are by Pamela Colman Smith, 1910 from the Rider–Waite–Smith Tarot deck. 
@@ -17,9 +18,7 @@ This project uses:
 6) Prepare to upload files ("View" > "Files")
 7) Navigate to this repo. Upload the "deck" and "fullmoons" folders and all files in them, "envrandom.py", "epaper.py", "main.py", "moonclock.py", "moongraphic.py", and "pcf8563.py"
 
-
 ## Next features
- - Make images flippable (reverses)
+ - Move config from main to separate file (and add to README setup above)
  - Shuffling screen has suffle icon
- - Shuffling screen has helper text about env random
  - Add capacity to invert black and white (dark mode or reverse)
