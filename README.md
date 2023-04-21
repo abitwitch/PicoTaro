@@ -28,6 +28,7 @@ This project uses:
 6) To set the clock on the pico
     1) Open `moonclock.py` and comment in the line `clk.set_clock(utcOffsetHours)`
     2) Change the `utcOffsetHours=-5` to your current timezone
+    3) Run `moonclock.py` on the Pico
 
 ## Next features
  - Move config from main to separate file (and add to README setup above)
