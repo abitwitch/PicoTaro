@@ -13,10 +13,10 @@ This project uses:
 ## Hardware build
 1) Insure the RTC is connected in battery ("BAT") mode
 2) Connect RTC to the Pico
-    -VCC on RTC to Pin 36 on Pico
-    -GND on RTC to any ground Pin on Pico
-    -SDA on RTC to Pin 21 on Pico
-    -SCL on RTC to Pin 2 on Pico
+    - VCC on RTC to Pin 36 on Pico
+    - GND on RTC to any ground Pin on Pico
+    - SDA on RTC to Pin 21 on Pico
+    - SCL on RTC to Pin 2 on Pico
 
 ## Setup
 1) Download and install Thonny `sudo apt install thonny`
