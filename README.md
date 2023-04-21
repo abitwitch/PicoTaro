@@ -17,6 +17,7 @@ This project uses:
     - GND on RTC to any ground Pin on Pico
     - SDA on RTC to Pin 21 on Pico
     - SCL on RTC to Pin 2 on Pico
+3) Plug the Pico into the E-Paper Display
 
 ## Setup
 1) Download and install Thonny `sudo apt install thonny`
