@@ -1,5 +1,7 @@
 # PicoTaro
 A disconnected digital taro deck. 
+
+
 ![Front of device](picotaro_front.png)
 ![Back of device](picotaro_back.png)
 
