@@ -1,5 +1,5 @@
 # PicoTaro
-A disconnected digital taro deck. 
+A disconnected digital taro deck. There is an integrated RTC to track the moon phases at the bottom of the screen. The device uses the temperature readings of the microcontroller chip to seed the randomness, meaning that the user can place thier finger on the black square (the 2040 chip) and they will directly affect the shuffling of the cards. 
 
 
 ![Front of device](picotaro_front.png)
